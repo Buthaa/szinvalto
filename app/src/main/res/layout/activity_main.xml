@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_RGB"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar_RED"
+        android:max="255"
+        android:theme="@style/SeekBarColorRED"
+        />
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar_GREEN"
+        android:layout_below="@+id/seekBar_RED"
+        android:max="255"
+        android:theme="@style/SeekBarColorGREEN"
+        />
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/seekBar_BLUE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar_GREEN"
+        android:max="255"
+        android:theme="@style/SeekBarColorBLUE"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_RGB"
+        android:textSize="25dp"
+        android:layout_centerVertical="true"
+        android:textAlignment="center"/>
+
+
+
+
+</RelativeLayout>
